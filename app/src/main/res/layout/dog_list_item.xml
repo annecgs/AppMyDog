@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    layout_height=""
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dog_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dog"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/dog_name"
+            android:layout_width="356dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/dog_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Bernese Mountain Dog" />
+
+        <TextView
+            android:id="@+id/dog_bred_for_and_breed_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Coursing and hunting | Hound"
+            app:layout_constraintTop_toBottomOf="@id/dog_name"
+            app:layout_constraintStart_toEndOf="@id/dog_image"
+            android:layout_marginStart="8dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
